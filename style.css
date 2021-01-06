@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  color: #1f2d3d;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:link,
+a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #44564a;
+}
+
+nav a:active {
+  color: rgb(165, 165, 165);
+}
+
+/* 모바일 767px 이하 */
+
+#container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 450px;
+  margin: 0;
+  background-size: cover;
+  background-image: url(assets/images/forest.jfif);
+}
+
+nav {
+  height: 70px;
+  background-color: #508164;
+  color: white;
+}
+
+#main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+#main-nav li {
+  display: inline-block;
+  margin: 0px 30px;
+  line-height: 50px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.page-content {
+  text-align: center;
+}
+
+section {
+  position: relative;
+  width: 93%;
+  padding: 15px 2% 10px 5%;
+}
+
+img {
+  width: 80%;
+  height: 30%;
+  border-radius: 70%;
+  margin-top: 20px;
+}
+
+.menu-items {
+  display: flex;
+  width: 90%;
+}
+
+.menu-item1 {
+  width: 80%;
+  height: 200px;
+  margin-left: 5px;
+  display: block;
+  border-radius: 2%;
+  text-align: center;
+}
+
+.menu-item1 {
+  width: 80%;
+  height: 200px;
+  margin-left: 20px;
+  display: block;
+  text-align: center;
+}
+
+.menu-item2 {
+  width: 80%;
+  height: 200px;
+  margin-left: 20px;
+  display: block;
+  text-align: center;
+}
+
+.menu-item3 {
+  width: 80%;
+  height: 200px;
+  margin-left: 20px;
+  display: block;
+  text-align: center;
+}
+
+.menu-item4 {
+  width: 80%;
+  height: 200px;
+  margin-left: 20px;
+  display: block;
+  text-align: center;
+}
+
+.menu-item5 {
+  width: 80%;
+  height: 200px;
+  margin-left: 20px;
+  display: block;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #44564a;
+  color: white;
+  line-height: 100px;
+  display: flex;
+}
+
+footer i {
+  margin: 45px 30px 0px 50px;
+}
+
+/* 태블릿 768px 이상 */
+
+@media screen and (min-width: 760px) {
+  header {
+    height: 550px;
+  }
+
+  #intro,
+  #notice {
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    margin: 0;
+    border: 1px dotted #ccc;
+    float: left;
+  }
+
+  #menu {
+    clear: left;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    margin-top: 20px;
+  }
+}
+
+/* PC 992px 이상 */
+@media screen and (min-width: 992px) {
+  #container {
+    width: 995px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+
+  header {
+    height: 600px;
+  }
+
+  #intro,
+  #notice {
+    height: 300px;
+  }
+}
