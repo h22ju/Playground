@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 Color Combination</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6302cf1a2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="2color.css" />
+    <link rel="stylesheet" href="typography.css" />
+  </head>
+
+  <body>
+    <section>
+      <article>
+        <div class="left-combination">
+          <header class="bc-yellow">
+            <h1>Headline</h1>
+
+            <p></p>
+
+            <button type="button" class="bc-blue">Button</button>
+          </header>
+
+          <footer class="bc-blue">
+            <p></p>
+          </footer>
+        </div>
+
+        <div class="right-combination">
+          <header class="bc-blue">
+            <h1>Headline</h1>
+
+            <p></p>
+
+            <button type="button" class="bc-yellow">Button</button>
+          </header>
+
+          <footer class="bc-yellow">
+            <p></p>
+          </footer>
+        </div>
+      </article>
+
+      <div class="copy-btn">
+        <p id="text1">#ffd662</p>
+        <button
+          onclick="copyToClipboard('text1')"
+          id="txt1btn"
+          class="bc-yellow"
+          aria-label="color blue"
+        >
+          <i class="far fa-copy"></i>
+        </button>
+
+        <p id="text2">#00539c</p>
+        <button
+          onclick="copyToClipboard('text2')"
+          id="txt2btn"
+          class="bc-blue"
+          aria-label="color yellow"
+        >
+          <i class="far fa-copy"></i>
+        </button>
+      </div>
+    </section>
+
+    <script src="2color.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+article {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.left-combination {
+  margin-right: 20px;
+}
+
+.left-combination header,
+.right-combination header {
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.left-combination header p::after,
+.right-combination header p::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+}
+
+.left-combination button,
+.right-combination button {
+  border: 0;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.left-combination footer,
+.right-combination footer {
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.left-combination footer p::after,
+.right-combination footer p::after {
+  content: "Lorem Ipsum is simply dummy text";
+}
+
+.copy-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.copy-btn button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+}
+
+.copy-btn button i {
+  font-size: 20px;
+}
+
+#txt1btn,
+#txt2btn {
+  cursor: pointer;
+}
+
+#text1,
+#text2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .left-combination,
+  .right-combination {
+    width: 300px;
+  }
+
+  .left-combination header,
+  .left-combination footer,
+  .right-combination header,
+  .right-combination footer {
+    padding: 20px;
+  }
+
+  .left-combination header p::after,
+  .right-combination header p::after {
+    content: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, facilis sunt. Delectus totam placeat earum inventore veniam atque nostrum ipsa, aliquam, laborum nesciunt ab repellendus quas dolorum minus magni ex.";
+  }
+
+  .left-combination button,
+  .right-combination button {
+    width: 65px;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  .copy-btn {
+    width: 670px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .left-combination footer p::after,
+  .right-combination footer p::after {
+    content: "The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.";
+  }
+}
