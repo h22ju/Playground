@@ -8,6 +8,5 @@ function copyToClipboard(elementId) {
   aux.select();
 
   document.execCommand("copy");
-
   document.body.removeChild(aux);
 }
